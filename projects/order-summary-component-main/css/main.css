@@ -1,0 +1,157 @@
+body {
+	background: url('../images/pattern-background-desktop.svg') no-repeat top / contain;
+	background-color: var(--pale-blue);
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	/*height: 600px;*/
+	width: 400px;
+	background-color: #ffffff;
+	border-radius: 20px;
+
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card img {
+	width: 100%;
+}
+
+.card h1 {
+	/* tamanho, fonte, centralizar */
+	text-align: center;
+	font-size: 28px;
+	font-family: var(--red-hat);
+	font-weight: 700;
+	color: var(--dark-blue);
+	margin-top: 35px;
+	margin-bottom: 25px;
+}
+
+.card > p {
+	/* fonte, cor, posição, espaço, */
+	font-family: var(--red-hat);
+	font-size: 16px;
+	color: var(--desaturated-blue);
+	text-align: center;
+	padding: 0 50px;
+	line-height: 25px;
+
+}
+
+.plan {
+	width: 300px;
+	/* fundo, fonte, cor letra, espaços, alinhamento, margem, tamanho caixa*/
+	background-color: var(--very-pale-blue);
+	margin: 25px 50px;
+	border-radius: 10px;
+	display: flex;
+	padding: 15px;
+	align-items: center;
+}
+
+.plan div p {
+	font-family: var(--red-hat);
+	font-size: 16px;
+	width: 100%;
+}
+
+.plan div p:nth-child(1) {
+	font-weight: 700;
+	color: var(--dark-blue);
+	padding: 0 20px 10px 20px;
+
+}
+
+.plan div p:nth-child(2) {
+	padding: 0 20px;
+	color: var(--desaturated-blue);	
+}
+
+.plan a {
+	margin-left: 50px;
+	font-family: var(--red-hat);
+	color: var(--bright-blue);
+}
+
+.plan a:hover {
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+button {
+	width: 350px;
+	background-color: var(--bright-blue);
+	border: 0;
+	color: #ffffff;
+	font-weight: 700;
+	padding: 1rem;
+	font-size: 16px;
+	border-radius: 10px;
+	box-shadow: 1px 20px 25px #1A117850;
+}
+
+button:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.card .order {
+	padding: 20px 0 40px 0;
+	font-weight: 700;
+}
+
+.card .order:hover {
+	color: var(--dark-blue);
+	cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+	body {
+		padding: 0 25px;
+	}
+
+	.card h1 {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+
+	.card > p {
+		padding: 0 25px;
+	}
+
+	.plan {
+		margin: 25px 0;
+		width: 250px;
+	}
+	
+	.plan img {
+		width: 50px;
+	}
+	
+	.plan div p {
+		font-size: 14px;
+	}
+	
+	.plan a {
+		margin-left: 20px;
+		font-size: 14px;
+	}
+
+	button {
+		padding: 0.75rem;
+		width: 275px;
+		font-size: 14px;
+	}
+
+	.card .order {
+		font-size: 14px;
+	}
+}
