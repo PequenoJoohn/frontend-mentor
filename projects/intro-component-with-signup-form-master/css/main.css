@@ -1,0 +1,170 @@
+body {
+    height: 100vh;
+    background: url('../images/bg-intro-desktop.png') no-repeat center / contain;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.title {
+    width: 500px;
+    margin-right: 5rem;
+}
+
+.title h1 {
+    font-size: 48px;
+    color: #f7f7f7;
+    font-weight: 700;
+    font-family: var(--poppins);
+    padding-bottom: 1.7765rem;
+    line-height: 2.765rem;
+}
+
+.title p {
+    color: #f7f7f7;
+    font-weight: 500;
+    font-family: var(--poppins);
+    line-height: 1.565rem;
+}
+
+.form {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+}
+
+.form .form-title {
+    background-color: var(--blue);
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+    color: #ffffff;
+    font-family: var(--poppins);
+    box-shadow: 1px 8px 5px rgba(62, 60, 73, 0.5);
+}
+
+.form .form-title span {
+    font-weight: 700;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 2rem 2rem;
+    border-radius: 7px;
+    box-shadow: 1px 8px 5px rgba(62, 60, 73, 0.5);
+}
+
+.form form input {
+    padding: 1rem 1.5rem;
+    border: 0.5px solid var(--grayish-blue);
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    font-family: var(--poppins);
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+
+.form form input:focus {
+    border: 2px solid var(--dark-blue);
+    outline: none;
+}
+
+.form form button {
+    background-color: var(--green);
+    border: 0;
+    border-radius: 7px;
+    padding: 1rem;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: var(--poppins);
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.form form button:hover {
+    opacity: 0.7;
+}
+
+.form form .copyright {
+    font-family: var(--poppins);
+    color: var(--grayish-blue);
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.form form .copyright a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+.form form .copyright a:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background: url('../images/bg-intro-mobile.png') no-repeat center / contain;
+        background-color: var(--red);
+        margin-bottom: 10rem;
+    }
+    section {
+        flex-wrap: wrap;
+    }
+    .title {
+        padding-top: 5rem;
+        width: 300px;
+        margin-right: 0;
+    }
+    .title h1 {
+        text-align: center;
+        font-size: 28px;
+        font-family: var(--poppins);
+        line-height: 1.765rem;
+    }
+    .title p {
+        text-align: center;
+        font-size: 15px;
+        padding-bottom: 2.765rem;
+    }
+    .form {
+        width: 300px;
+        align-items: center;
+    }
+    .form .form-title {
+        padding: 1rem;
+        width: 300px;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        line-height: 1.565rem;
+    }
+    .form .form-title p {
+        text-align: center;
+        width: 70%;
+    }
+    .form .form-title p span {
+        font-weight: bold;
+    }
+    .form form {
+        width: 275px;
+        padding-bottom: 1rem;
+    }
+    .form form .copyright a {
+        padding-bottom: 0;
+        line-height: 1.5765rem;
+    }
+}

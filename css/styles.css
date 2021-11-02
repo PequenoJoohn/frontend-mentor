@@ -1,0 +1,36 @@
+@import './reset.css';
+
+body {
+    background-color: skyblue;
+}
+
+h1 {
+    font-size: 32px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+
+ul li {
+    flex: 25%;
+}
+
+ul li div a {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+ul li img {
+    width: 400px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
