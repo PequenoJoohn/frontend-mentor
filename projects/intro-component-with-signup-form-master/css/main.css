@@ -7,6 +7,66 @@ body {
     align-items: center;
 }
 
+.pop-up {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.pop-up .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    animation: space 0.5s alternate;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.d-none {
+    display: none;
+}
+
+@keyframes space {
+    0% {
+        opacity: 0;
+    }     
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+.pop-up.success h2, .pop-up.error h2 {
+    z-index: 999;
+    border: 1px solid var(--dark-blue);
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5rem;
+    font-family: var(--poppins);
+    background: url('../images/bg-intro-desktop.png') no-repeat center / contain;
+    background-color: var(--red);
+    position: relative;
+    animation: space 1s alternate;
+}
+
+.pop-up.success h2 span, .pop-up.error h2 span {
+    position: absolute;
+    content: '';
+    top: 5px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    right: 15px;
+    cursor: pointer;
+    animation: space 1s alternate;
+}
+
+/* .pop-up.error */
+
 section {
     display: flex;
     justify-content: center;
